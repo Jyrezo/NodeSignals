@@ -1,0 +1,26 @@
+{
+  "name": "nodesignals",
+  "description": "Node.js Signal Implementation Similar To Roblox's Signals",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodedJimmy/NodeSignals.git"
+  },
+  "author": "CodedJimmy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CodedJimmy/NodeSignals/issues"
+  },
+  "homepage": "https://github.com/CodedJimmy/NodeSignals#readme",
+  "devDependencies": {
+    "@types/jest": "^29.2.4",
+    "jest": "^29.3.1",
+    "ts-jest": "^29.0.3",
+    "typescript": "^4.9.4"
+  }
+}
