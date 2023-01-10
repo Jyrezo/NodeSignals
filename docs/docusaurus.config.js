@@ -9,7 +9,7 @@ const config = {
   title: 'NodeSignals',
   tagline: 'Dinosaurs are cool',
   url: 'https://codedjimmy.github.io',
-  baseUrl: '/nodesignals',
+  baseUrl: '/NodeSignals',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
