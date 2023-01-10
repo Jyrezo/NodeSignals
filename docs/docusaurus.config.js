@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'NodeSignals',
-  tagline: 'Node.js implementation of Signals similar to Roblox.',
+  tagline: 'Node.js Signal Implementation Similar To Roblox\'s Signals',
   url: 'https://codedjimmy.github.io',
   baseUrl: '/NodeSignals',
   onBrokenLinks: 'throw',
@@ -81,7 +81,7 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docs',
           },
           { to: '/blog', label: 'Blog', position: 'left' },
           {
