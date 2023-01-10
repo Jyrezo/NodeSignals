@@ -78,7 +78,7 @@ const config = {
       navbar: {
         title: 'NodeSignals',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -88,7 +88,7 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
+          //{ to: '/blog', label: 'Blog', position: 'left' },
           {
             href: 'https://github.com/CodedJimmy/nodesignals',
             label: 'GitHub',
@@ -128,10 +128,12 @@ const config = {
           {
             title: 'More',
             items: [
+              /*
               {
                 label: 'Blog',
                 to: '/blog',
               },
+              */
               {
                 label: 'GitHub',
                 href: 'https://github.com/CodedJimmy/nodesignals',
