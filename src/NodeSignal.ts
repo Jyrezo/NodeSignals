@@ -14,6 +14,11 @@ export class NodeSignal {
     this.Connections = []
   }
 
+  /**
+   * Fires the args to the connected events
+   * @param {any} args The args you want to fire to the connected events 
+   */
+
   Fire(...args: any) {
     let index = 1
     for (let connection of this.Connections) {

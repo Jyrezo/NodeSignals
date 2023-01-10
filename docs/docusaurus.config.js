@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'NodeSignals',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Node.js implementation of Signals similar to Roblox.',
   url: 'https://codedjimmy.github.io',
   baseUrl: '/nodesignals',
   onBrokenLinks: 'throw',
