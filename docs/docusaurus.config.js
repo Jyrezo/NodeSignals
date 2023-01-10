@@ -17,7 +17,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'CodedJimmy', // Usually your GitHub org/user name.
-  projectName: 'nodesignals', // Usually your repo name.
+  projectName: 'NodeSignals', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -33,7 +33,8 @@ const config = {
       {
         entryPoints: ['../src/index.ts'],
         tsconfig: '../tsconfig.json',
-        out: "api"
+        out: "api",
+        readme: "none"
       },
     ],
     [
@@ -84,9 +85,9 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'api/index',
             position: 'left',
-            label: 'Docs',
+            label: 'API',
           },
           //{ to: '/blog', label: 'Blog', position: 'left' },
           {
@@ -104,7 +105,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/API',
               },
             ],
           },

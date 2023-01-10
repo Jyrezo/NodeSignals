@@ -6,7 +6,7 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import styles from './index.module.css';
-import StartIcon from '@mui/icons-material/Start';
+import ForwardIcon from '@mui/icons-material/ArrowForward';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -18,9 +18,9 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
+            to="/docs/API">
             Get Started
-            <StartIcon />
+            <ForwardIcon style={{ verticalAlign: "text-bottom", marginLeft: "5%" }} />
           </Link>
         </div>
       </div>
