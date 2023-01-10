@@ -35,6 +35,11 @@ const config = {
         tsconfig: '../tsconfig.json',
         out: "api"
       },
+    ],
+    [
+      require.resolve('docusaurus-lunr-search'),
+      {
+      },
     ]
   ],
 
