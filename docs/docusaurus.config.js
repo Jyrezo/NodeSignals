@@ -80,7 +80,7 @@ const config = {
         title: 'NodeSignals',
         logo: {
           alt: 'Logo',
-          src: 'img/logo.svg',
+          src: 'img/NodeSignalsLogo.svg',
         },
         items: [
           {
