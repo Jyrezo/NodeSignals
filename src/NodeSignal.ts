@@ -31,11 +31,22 @@ export class NodeSignal {
     }
   }
 
+  /**
+   * Lets you listen to a specific event
+   * @param {Function} Callback The function you want you want to listen to the event with
+   * @returns {NodeSignalConnection}
+   */
+
   Connect(Callback: Function) {
     const Connection = new NodeSignalConnection(Callback)
     this.Connections.push(Connection)
     return Connection
   }
+
+  /**
+   * Lets you wait until a function is called to execute
+   * @returns {Promise<unknown>}
+   */
 
   Wait() {
     return new Promise((resolve) => {

@@ -1,2 +1,4 @@
 node_modules
 lib
+docs/docs/api
+*package-lock.json

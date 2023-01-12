@@ -7,6 +7,15 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import styles from './index.module.css';
 import ForwardIcon from '@mui/icons-material/ArrowForward';
+//import { Button, ThemeProvider } from '@mui/material';
+
+/*
+<Button variant="contained" style={{textTransform: "capitalize", width: "18%", height: "4.6vh", fontSize: 17}}>
+     Get Started
+  <ForwardIcon style={{ verticalAlign: "text-bottom", marginLeft: "3%" }}/>
+</Button>
+*/
+
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -18,7 +27,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/API">
+            to="/docs/Intro">
             Get Started
             <ForwardIcon style={{ verticalAlign: "text-bottom", marginLeft: "5%" }} />
           </Link>
@@ -32,7 +41,7 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title}`}
+      title="Home"
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
