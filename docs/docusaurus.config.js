@@ -85,6 +85,12 @@ const config = {
         items: [
           {
             type: 'doc',
+            docId: 'Intro',
+            position: 'left',
+            label: 'Intro',
+          },
+          {
+            type: 'doc',
             docId: 'api/index',
             position: 'left',
             label: 'API',

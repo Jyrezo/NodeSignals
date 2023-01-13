@@ -1,6 +1,6 @@
 ---
-id: "intro"
-title: "Intro to NodeSignals"
+id: "Intro"
+title: "Introduction"
 custom_edit_url: null
 sidebar_position: 0
 ---
@@ -37,4 +37,10 @@ To listen to an event you can do the following.
 Signal.Connect((/*Args Go Here*/) => {
 
 })
+```
+
+To fire the above event you can just simply do the following.
+
+```js
+Signal.Fire(/*Args Go Here*/)
 ```

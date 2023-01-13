@@ -1,6 +1,6 @@
 export interface NodeSignalConnectionType {
   Callback: Function,
-  Disconnect: Function,
+  Disconnect(): void,
   ShouldBeRemoved: boolean
 }
 
