@@ -3,7 +3,7 @@ import { NodeSignalConnection, NodeSignalConnectionType } from "./Connection";
 export interface NodeSignalType {
   Connections: Array<NodeSignalConnectionType>,
   Fire(...args: any): void,
-  Connect(Callback: Function): void,
+  Connect(Callback: Function): NodeSignalConnection,
   Wait(): Promise<unknown>
 }
 
