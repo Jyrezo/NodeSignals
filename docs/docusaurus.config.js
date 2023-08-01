@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'NodeSignals',
   tagline: 'Node.js Signal Implementation Similar To Roblox\'s Signals',
-  url: 'https://codedjimmy.github.io',
+  url: 'https://jyrezo.github.io',
   baseUrl: '/NodeSignals',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -16,7 +16,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'CodedJimmy', // Usually your GitHub org/user name.
+  organizationName: 'Jyrezo', // Usually your GitHub org/user name.
   projectName: 'NodeSignals', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -97,7 +97,7 @@ const config = {
           },
           //{ to: '/blog', label: 'Blog', position: 'left' },
           {
-            href: 'https://github.com/CodedJimmy/nodesignals',
+            href: 'https://github.com/Jyrezo/nodesignals',
             label: 'GitHub',
             position: 'right',
           },
@@ -120,7 +120,7 @@ const config = {
             items: [
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/CodedJimmy',
+                href: 'https://twitter.com/Jyrezo',
               }
             ],
           },
@@ -135,12 +135,12 @@ const config = {
               */
               {
                 label: 'GitHub',
-                href: 'https://github.com/CodedJimmy/nodesignals',
+                href: 'https://github.com/Jyrezo/NodeSignals',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} CodedJimmy, Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Jyrezo, Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
