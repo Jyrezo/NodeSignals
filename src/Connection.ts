@@ -1,9 +1,3 @@
-export interface NodeSignalConnectionType {
-  Callback: Function,
-  Disconnect(): void,
-  ShouldBeRemoved: boolean
-}
-
 export class NodeSignalConnection {
   Callback: Function
   ShouldBeRemoved: boolean

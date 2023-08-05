@@ -1,17 +1,12 @@
-import { NodeSignalConnection, NodeSignalConnectionType } from "./Connection";
-
-export interface NodeSignalType {
-  Connections: Array<NodeSignalConnectionType>,
-  Fire(...args: any): void,
-  Connect(Callback: Function): NodeSignalConnection,
-  Wait(): Promise<unknown>
-}
+import { NodeSignalConnection } from "./Connection";
 
 export class NodeSignal {
-  Connections: Array<NodeSignalConnectionType>
+  connections: Array<NodeSignalConnection>
+  destroyed: boolean
 
   constructor() {
-    this.Connections = []
+    this.connections = []
+    this.destroyed = false
   }
 
   /**
@@ -19,13 +14,13 @@ export class NodeSignal {
    * @param {any} args The args you want to fire to the connected events 
    */
 
-  Fire(...args: any) {
+  fire(...args: any) {
     let index = 1
-    for (let connection of this.Connections) {
+    for (let connection of this.connections) {
       if (!connection.ShouldBeRemoved) {
         connection.Callback(...args)
       } else {
-        this.Connections.splice(index, 1)
+        this.connections.splice(index, 1)
       }
       index += 1
     }
@@ -37,9 +32,9 @@ export class NodeSignal {
    * @returns {NodeSignalConnection}
    */
 
-  Connect(Callback: Function) {
+  connect(Callback: Function): NodeSignalConnection {
     const Connection = new NodeSignalConnection(Callback)
-    this.Connections.push(Connection)
+    this.connections.push(Connection)
     return Connection
   }
 
@@ -48,11 +43,21 @@ export class NodeSignal {
    * @returns {Promise<unknown>}
    */
 
-  Wait() {
+  wait(): Promise<unknown> {
     return new Promise((resolve) => {
-      this.Connect(function () {
+      this.connect(function () {
         resolve(undefined)
       })
     })
+  }
+
+  /**
+   * Destroys the Signal
+   * @returns {void}
+   */
+
+  Destroy(): void {
+    this.destroyed = true
+    this.connections = []
   }
 }
