@@ -56,7 +56,7 @@ export class NodeSignal {
    * @returns {void}
    */
 
-  Destroy(): void {
+  destroy(): void {
     this.destroyed = true
     this.connections = []
   }
