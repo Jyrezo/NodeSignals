@@ -1,9 +1,7 @@
-import { NodeSignal, NodeSignalType } from "./NodeSignal";
-import { NodeSignalConnection, NodeSignalConnectionType } from "./Connection";
+import { NodeSignal } from "./NodeSignal";
+import { NodeSignalConnection } from "./Connection";
 
 export {
   NodeSignal,
-  NodeSignalType,
-  NodeSignalConnection,
-  NodeSignalConnectionType
+  NodeSignalConnection
 }
